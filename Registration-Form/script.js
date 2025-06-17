@@ -210,6 +210,11 @@
       }
     });
 
+    document.getElementById('clearButton').addEventListener('click', () => {
+      document.getElementById("registrationForm").reset();
+      document.querySelectorAll('span').forEach((span) => span.innerHTML = ' ');
+    })
+
     closeModalButton.addEventListener('click', () => {
       modal.style.display = 'none';
       backdrop.style.display = "none";
