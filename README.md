@@ -1,4 +1,4 @@
 # Training
 
 ### Javascript
-* [Registration Form](https://reshmab-olt.github.io/Training/Javascript/1.Basic-Calculator/src/index.html)
+* [Registration Form](https://github.com/Parvathy-g2003/main/blob/main/Registration-Form/index.html)
