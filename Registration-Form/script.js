@@ -211,6 +211,7 @@
     });
 
     document.getElementById('clearButton').addEventListener('click', () => {
+            alert('Alert');
       document.getElementById("registrationForm").reset();
       document.querySelectorAll('span').forEach((span) => span.innerHTML = ' ');
     })
