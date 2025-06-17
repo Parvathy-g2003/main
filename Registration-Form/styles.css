@@ -1,0 +1,151 @@
+  body {
+      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  input {
+      padding: 16px;
+      margin-top: 15px;
+      border-color: #d3d1cf;
+      border-radius: 5px;
+      border-style: double;
+      width: 40%;
+  }
+
+  input[type="checkbox"] {
+      width: 15px;
+  }
+
+  span {
+      font-size: x-small;
+      color: red;
+  }
+
+  table {
+      width: 100%;
+  }
+
+  select {
+      padding: 16px;
+      margin-bottom: 15px;
+      border-color: #d3d1cf;
+      border-radius: 5px;
+      border-style: double;
+      width: 316px;
+      border-width: 2px;
+  }
+
+  input[type="date"i] {
+      font-family: monospace;
+
+      cursor: default;
+      padding: 16px;
+      margin-bottom: 21px;
+      margin-top: 10px;
+  }
+
+  textarea {
+      padding: 16px;
+      border-color: #d3d1cf;
+      border-radius: 5px;
+      border-style: double;
+      border-width: 2px;
+      width: 40%;
+      margin-top: 30px;
+  }
+
+  label {
+      width: 38%;
+      display: inline-block;
+      vertical-align: middle;
+      height: 25px;
+      border-radius: 3px;
+  }
+
+  form {
+      background-color: #d9eeff;
+      padding: 20px;
+      border-radius: 7px;
+  }
+
+  #submitButton {
+      background-color: #3f70bc;
+      color: #f0f8ff;
+      padding: 16px 30px;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+  }
+
+  #modalCloseButton {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+  }
+
+  #viewModalButton {
+      background-color: #0da105;
+      padding: 10px;
+      border-radius: 5px;
+      width: 200px;
+      border: none;
+  }
+
+  #clearButton {
+      background-color: #ef0606;
+      color: #f0f8ff;
+      padding: 16px 30px;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+  }
+
+  #modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    display: none;
+}
+
+  .modal-footer {
+      text-align: end;
+  }
+
+  .container {
+      width: 660px;
+      margin: 50px auto;
+      padding: 30px;
+  }
+
+  .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #00000080;
+      z-index: 999;
+  }
+
+  .close-button {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #ff0000;
+  }
+
+  .modal-span {
+      font-size: medium;
+      color: chocolate;
+  }
+
+  .required

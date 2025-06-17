@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm">
+
+            <label for="firstName">First Name <span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" required minlength="3" maxlength="8">
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="firstNameError"></span></td>
+                </tr>
+            </table>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required minlength="3" maxlength="8"> 
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="lastNameError"></span></td>
+                </tr>
+            </table>
+
+            <label for="pword">Password</label>
+            <input type="password" id="pword" name="pword" required minlength="8" maxlength="20">
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="passwordError"></span></td>
+                </tr>
+            </table>
+
+            <label for="confirmPwd">Confirm Password</label>
+            <input type="password" id="confirmPwd" name="confirmPwd" required minlength="8" maxlength="20">
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="confirmPwdError"></span></td>
+                </tr>
+            </table>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="emailError"></span></td>
+                </tr>
+            </table>
+
+            <label style=" margin-top: 16px; vertical-align: 14px;" for="address">Address:</label>
+            <textarea id="address" name="address" rows="1"></textarea>
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="addressError"></span></td>
+                </tr>
+            </table>
+
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="dateOfBirthError"></span></td>
+                </tr>
+            </table>
+
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="number" id="mobileNumber" name="mobileNumber">
+            <table>
+                <tr>
+                    <td style="width: 39%;"></td>
+                    <td> <span id="mobileNumberError"></span></td>
+                </tr>
+            </table>
+
+            <div style="justify-content: center; display: flex; margin-top: 20px">
+                <button id="clearButton" style=" width: 156px; margin-right:10px" type="reset">Clear</button>
+
+                <button id="submitButton" style=" width: 156px;" type="submit">Register</button>
+            </div>
+        </form>
+
+        <div style="text-align: end; margin-top: 15px;">
+            <button id="viewModalButton" style="display: none;"> View data modal</button>
+        </div>
+
+        <div id="modal">
+            <div class="moda-l-header">
+                <h2>User Details</h2>
+            </div>
+            <div class="modal-content">
+                <p>First Name : <span class="modal-span" id="modalFirstName"></span></p>
+                <p>Last Name : <span class="modal-span" id="modalLastName"></span></p>
+                <p>Password : <span class="modal-span" id="modalPwd"></span></p>
+                <p>Confirm Password : <span class="modal-span" id="modalConfirmPwd"></span></p>
+                <p>Address : <span class="modal-span" id="modalAddress"></span></p>
+                <p>Email : <span class="modal-span" id="modalEmail"></span></p>
+                <p>Mobile Number : <span class="modal-span" id="modalMobileNumber"></span></p>
+                <p>Date of Birth : <span class="modal-span" id="modalDateOfBirth"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button id="modalCloseButton">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="modalBackdrop" class="modal-backdrop" style="display: none;"></div>
+
+</body>
+
+
+</html>
